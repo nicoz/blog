@@ -1,0 +1,24 @@
+!!!
+%head
+  %title= app_title
+  = stylesheet_link_tag "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+
+.container
+
+  %section.content
+    = yield
+
+  %section.sidebar
+    %h1= app_title
+    .tagline
+      %p= tagline
+    %nav
+      %ul
+        %li= link_to "About", root_path
+        %li= link_to "Archives", root_path
+        %li= link_to "Start Here", root_path
+
+
+.footer

@@ -1,0 +1,6 @@
+module ApplicationHelper
+
+  def app_title
+    'Zonical'
+  end
+end
